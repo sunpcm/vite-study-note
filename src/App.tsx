@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
 const App = () => {
+
+  console.log('API Address:', import.meta.env.VITE_API_URL);
+
   const [count, setCount] = useState(0);
   return (
     <div className="container">
