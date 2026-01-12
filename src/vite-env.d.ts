@@ -2,7 +2,8 @@
 
 interface ImportMetaEnv {
   readonly VITE_API_URL: string;
-  // 在这里定义更多环境变量...
+  readonly VITE_ENV: 'development' | 'production';
+  readonly VITE_APP_TITLE: string;
 }
 
 interface ImportMeta {
