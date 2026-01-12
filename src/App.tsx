@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const App = () => {
   const [count, setCount] = useState(0);
 
-  console.log('API Address:', import.meta.env.VITE_API_URL);
+  console.log("API Address:", import.meta.env.VITE_API_URL);
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
@@ -15,8 +15,8 @@ const App = () => {
           <p className="text-gray-600 mb-2">Current Count:</p>
           <p className="text-4xl font-bold text-blue-600">{count}</p>
         </div>
-        <button 
-          onClick={() => setCount(c => c + 1)}
+        <button
+          onClick={() => setCount((c) => c + 1)}
           className="w-full px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
         >
           Increment Count
