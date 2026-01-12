@@ -11,7 +11,7 @@ export default defineConfig({
         tailwindcss(),
         // autoprefixer(),
         visualizer({
-            open: true,  // 构建完自动打开
+            open: false,  // 构建完自动打开
             gzipSize: true, // 显示 gzip 大小
             brotliSize: true, // 显示 brotli 大小
             filename: 'dist/stats.html', // 生成的文件位置
@@ -19,6 +19,7 @@ export default defineConfig({
     ],
     server: {
         port: 3000,
+        open: true, // 启动后自动打开浏览器
         proxy: {
         // === 代理规则 1：Dataset 服务 (localhost:8080) ===
         '/api/dataset': {
